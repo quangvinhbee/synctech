@@ -1,0 +1,529 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="icon" href="favicon.png" sizes="any" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, viewport-fit=cover"
+    />
+    <meta http-equiv="content-security-policy" content />
+    <title>Semantical</title>
+    <meta
+      name="description"
+      content="Semantical is a small privately funded team aspiring to help individuals regain and keep control of their digital lives by developing humane digital experiences and a technological base for all."
+      data-svelte="svelte-8d6ien"
+    />
+    <meta name="theme-color" content="#2b047a" data-svelte="svelte-8d6ien" />
+    <meta
+      property="og:url"
+      content="https://semantical.com/"
+      data-svelte="svelte-8d6ien"
+    />
+    <meta property="og:type" content="website" data-svelte="svelte-8d6ien" />
+    <meta
+      property="og:site_name"
+      content="Semantical"
+      data-svelte="svelte-8d6ien"
+    />
+    <meta
+      property="og:title"
+      content="Semantical — Let&#39;s regain control of our digital lives"
+      data-svelte="svelte-8d6ien"
+    />
+    <meta
+      property="og:description"
+      content="Semantical is a small privately funded team aspiring to help individuals regain and keep control of their digital lives by developing humane digital experiences and a technological base for all."
+      data-svelte="svelte-8d6ien"
+    />
+    <meta
+      name="twitter:card"
+      content="summary_large_image"
+      data-svelte="svelte-8d6ien"
+    />
+    <meta
+      name="twitter:title"
+      content="Semantical — Let&#39;s regain control of our digital lives"
+      data-svelte="svelte-8d6ien"
+    />
+    <meta
+      name="twitter:description"
+      content="Semantical is a small privately funded team aspiring to help individuals regain and keep control of their digital lives by developing humane digital experiences and a technological base for all."
+      data-svelte="svelte-8d6ien"
+    />
+    <meta
+      property="og:image"
+      content="https://semantical.com/preview.jpg"
+      data-svelte="svelte-8d6ien"
+    />
+    <meta
+      property="og:image:secure_url"
+      content="https://semantical.com/preview.jpg"
+      data-svelte="svelte-8d6ien"
+    />
+    <meta
+      property="og:image:type"
+      content="image/jpeg"
+      data-svelte="svelte-8d6ien"
+    />
+    <meta
+      property="og:image:width"
+      content="1280"
+      data-svelte="svelte-8d6ien"
+    />
+    <meta
+      property="og:image:height"
+      content="720"
+      data-svelte="svelte-8d6ien"
+    />
+    <meta
+      property="og:video"
+      content="https://semantical.com/preview.mp4"
+      data-svelte="svelte-8d6ien"
+    />
+    <meta
+      property="og:video:secure_url"
+      content="https://semantical.com/preview.mp4"
+      data-svelte="svelte-8d6ien"
+    />
+    <meta
+      property="og:video:type"
+      content="video/mp4"
+      data-svelte="svelte-8d6ien"
+    />
+    <meta
+      property="og:video:width"
+      content="1280"
+      data-svelte="svelte-8d6ien"
+    />
+    <meta
+      property="og:video:height"
+      content="720"
+      data-svelte="svelte-8d6ien"
+    />
+    <link href="_app/immutable/assets/_layout-c08d21cc.css" rel="stylesheet" />
+    <link href="_app/immutable/assets/_page-bfe4508e.css" rel="stylesheet" />
+    <link rel="modulepreload" href="_app/immutable/start-b092109f.js" />
+    <link rel="modulepreload" href="_app/immutable/chunks/index-0f9def9f.js" />
+    <link
+      rel="modulepreload"
+      href="_app/immutable/chunks/singletons-992bbdee.js"
+    />
+    <link
+      rel="modulepreload"
+      href="_app/immutable/components/pages/_layout.svelte-d5bdb21a.js"
+    />
+    <link rel="modulepreload" href="_app/immutable/chunks/stores-7d1df338.js" />
+    <link
+      rel="modulepreload"
+      href="_app/immutable/modules/pages/_layout.js-7b9cbfbc.js"
+    />
+    <link
+      rel="modulepreload"
+      href="_app/immutable/chunks/_layout-8d2a742b.js"
+    />
+
+    <link
+      rel="modulepreload"
+      href="_app/immutable/components/pages/_page.svelte-9ad414f0.js"
+    />
+    <link
+      rel="preload"
+      href="font/Decimal-Book.woff2"
+      as="font"
+      type="font/woff2"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="preload"
+      href="font/Decimal-Bold.woff2"
+      as="font"
+      type="font/woff2"
+      crossorigin="anonymous"
+    />
+    <script src="/canvas.js"></script>
+    <script src="/demoad.js"></script>
+    <script src="/utils.js"></script>
+    <script src="/noise.min.js"></script>
+  </head>
+  <body class="flex flex-col min-h-smallscreen">
+    <div class="content content--canvas">
+      <canvas
+        width="1119"
+        height="920"
+        style="position: fixed; top: 0px; left: 0px; width: 100%; height: 100%"
+      ></canvas>
+    </div>
+
+    <nav
+      class="z-40 bg-gradient-to-b from-black/20 to-transparent px-screen pt-5 sm:p-6 sm:pb-0 w-full"
+    >
+      <div
+        class="relative relative mx-auto w-full max-w-6xl rounded-2xl backdrop-blur-lg"
+      >
+        <div
+          class="absolute inset-[.375rem] rounded-[.625rem] bg-white opacity-0"
+        ></div>
+        <ul
+          class="flex justify-between px-5 py-3 text-lg after:absolute after:inset-0 after:rounded-2xl after:border after:border-white/30 after:bg-white/20 svelte-6bv4xv"
+        >
+          <li class="text-white/90">
+            <a
+              class="link relative z-10 -mx-[.875rem] -my-[.375rem] block px-[.875rem] py-[.375rem] hover:cursor-pointer"
+              href="index.html"
+              >SyncTech</a
+            >
+          </li>
+          <div class="flex gap-5 sm:gap-8">
+            <li class="text-white/70">
+              <a
+                class="link relative z-10 -mx-[.875rem] -my-[.375rem] block px-[.875rem] py-[.375rem] hover:cursor-pointer"
+                href="index.html#contact"
+                >Contact</a
+              >
+            </li>
+          </div>
+        </ul>
+      </div>
+    </nav>
+    <div
+      class="flex flex-col items-center gap-12 px-screen pt-12 pb-32 sm:gap-48 sm:py-48"
+    >
+      <div>
+        <section class="flex flex-col items-center">
+          <header
+            class="relative grid max-w-xl grid-cols-1 place-content-center gap-6 mix-blend-plus-lighter sm:gap-10 sm:text-center lg:max-w-7xl lg:grid-cols-[1fr_2px_1fr]"
+          >
+            <h1 class="title self-center font-extrabold lg:text-right">
+              Connections Sync and Possibilities Tech
+            </h1>
+            <div
+              class="divider hidden lg:block lg:bg-white lg:bg-opacity-10"
+            ></div>
+            <p class="subtitle self-center opacity-70 lg:text-left">
+              Powered by advanced technology, SyncTech seamlessly blends social
+              networking with blockchain innovation to create a dynamic
+              ecosystem where connections hold tangible value
+            </p>
+          </header>
+        </section>
+      </div>
+    </div>
+    <main class="flex flex-col gap-32 px-screen sm:gap-64">
+      <section
+        class="flex flex-col items-center justify-center gap-12 text-center undefined"
+      >
+        <header
+          class="flex max-w-2xl flex-col gap-4 text-left mix-blend-plus-lighter sm:text-center"
+        >
+          <p class="font-bold uppercase text-white/60">OUR BOT</p>
+          <h2 class="heading mb-4 font-bold sm:mx-auto">
+            Easy to Access and Connect
+          </h2>
+          <p class="subheading opacity-70">
+            Navigating through different sections and features, allows you to
+            effortlessly connect with others, discover exciting content, and
+            engage in meaningful interactions.
+          </p>
+        </header>
+        <div
+          class="grid grid-cols-1 gap-4 sm:max-w-3xl sm:grid-cols-[1fr_1fr] xl:max-w-4xl"
+        >
+          <div class="gesture-wrapper svelte-10rpdgm">
+            <div class="gesture-item h-full svelte-10rpdgm">
+              <img
+                src="icon/now.png"
+                loading="lazy"
+                width="40"
+                height="40"
+                alt="'now' icon"
+                aria-hidden="true"
+                class="icon pointer-events-none absolute top-10 left-10 z-50 m-[1px] box-content rounded-2xl bg-gradient-to-br from-white/50 via-white/5 to-transparent p-2 mix-blend-plus-lighter sm:top-12 sm:left-12 svelte-1pt0422"
+              />
+              <div
+                class="box flex h-full flex-col gap-4 rounded-[1.5rem] p-10 text-left sm:p-12 glass"
+              >
+                <div
+                  aria-hidden="true"
+                  class="mb-2 box-content h-10 w-10 p-2"
+                ></div>
+                <h3 class="headline font-bold">Real-time Data Tracking</h3>
+                <p class="text opacity-80">
+                  With its advanced functionality, the SyncTech bot allows users
+                  to effortlessly track Key Opinion Leaders (KOLs) through their
+                  usernames, accessing valuable information and APIs from
+                  Twitter and FriendTech.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="gesture-wrapper svelte-10rpdgm">
+            <div class="gesture-item h-full svelte-10rpdgm">
+              <img
+                src="icon/today.png"
+                loading="lazy"
+                width="40"
+                height="40"
+                alt="'today' icon"
+                aria-hidden="true"
+                class="icon pointer-events-none absolute top-10 left-10 z-50 m-[1px] box-content rounded-2xl bg-gradient-to-br from-white/50 via-white/5 to-transparent p-2 mix-blend-plus-lighter sm:top-12 sm:left-12 svelte-1pt0422"
+              />
+              <div
+                class="box flex h-full flex-col gap-4 rounded-[1.5rem] p-10 text-left sm:p-12 glass"
+              >
+                <div
+                  aria-hidden="true"
+                  class="mb-2 box-content h-10 w-10 p-2"
+                ></div>
+                <h3 class="headline font-bold">Hi-speed Sell/Buy</h3>
+                <p class="text opacity-80">
+                  SyncTech's bot is equipped with a high-speed buy and sell
+                  feature for KEYS, enabling users to make quick transactions.
+                  Additionally, it integrates data from Telegram and FriendTech,
+                  allowing users to stay updated on the activities and insights
+                  of KOLs.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section
+        class="flex flex-col items-center justify-center gap-12 text-center undefined"
+      >
+        <header
+          class="flex max-w-2xl flex-col gap-4 text-left mix-blend-plus-lighter sm:text-center"
+        >
+          <p class="font-bold uppercase text-white/60">OUR TECHNOLOGY</p>
+          <h2 class="heading mb-4 font-bold sm:mx-auto">A new kind of tech</h2>
+          <p class="subheading opacity-70">
+            We envision a future where individuals have the freedom to choose
+            applications that align with their values and prioritize data
+            privacy and security
+          </p>
+        </header>
+        <div
+          class="grid grid-cols-1 gap-4 sm:max-w-3xl sm:grid-cols-[1fr_1fr] xl:max-w-4xl"
+        >
+          <div class="gesture-wrapper svelte-10rpdgm">
+            <div class="gesture-item h-full svelte-10rpdgm">
+              <img
+                src="icon/convergent.png"
+                loading="lazy"
+                width="40"
+                height="40"
+                alt="'convergent' icon"
+                aria-hidden="true"
+                class="icon pointer-events-none absolute top-10 left-10 z-50 m-[1px] box-content rounded-2xl bg-gradient-to-br from-white/50 via-white/5 to-transparent p-2 mix-blend-plus-lighter sm:top-12 sm:left-12 svelte-1pt0422"
+              />
+              <div
+                class="box flex h-full flex-col gap-4 rounded-[1.5rem] p-10 text-left sm:p-12 glass"
+              >
+                <div
+                  aria-hidden="true"
+                  class="mb-2 box-content h-10 w-10 p-2"
+                ></div>
+                <h3 class="headline font-bold">Sync</h3>
+                <p class="text opacity-80">
+                  Say goodbye to the headaches of sync conflicts and experience
+                  a seamless and conflict-free data synchronization process.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="gesture-wrapper svelte-10rpdgm">
+            <div class="gesture-item h-full svelte-10rpdgm">
+              <img
+                src="icon/dataflow.png"
+                loading="lazy"
+                width="40"
+                height="40"
+                alt="'dataflow' icon"
+                aria-hidden="true"
+                class="icon pointer-events-none absolute top-10 left-10 z-50 m-[1px] box-content rounded-2xl bg-gradient-to-br from-white/50 via-white/5 to-transparent p-2 mix-blend-plus-lighter sm:top-12 sm:left-12 svelte-1pt0422"
+              />
+              <div
+                class="box flex h-full flex-col gap-4 rounded-[1.5rem] p-10 text-left sm:p-12 glass"
+              >
+                <div
+                  aria-hidden="true"
+                  class="mb-2 box-content h-10 w-10 p-2"
+                ></div>
+                <h3 class="headline font-bold">Tech</h3>
+                <p class="text opacity-80">
+                  This powerful layer simplifies the management of your
+                  application's data, allowing you to focus on building engaging
+                  user experiences
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <small class="opacity-50" slot="after"
+          ><a href="index.html#contact" class="underline">Contact us</a> to
+          learn more.
+        </small>
+      </section>
+      <section
+        class="flex flex-col items-center justify-center gap-12 text-center undefined"
+      >
+        <header
+          class="flex max-w-2xl flex-col gap-4 text-left mix-blend-plus-lighter sm:text-center"
+        >
+          <p class="font-bold uppercase text-white/60">OUR MISSIONS</p>
+          <h2 class="heading mb-4 font-bold sm:mx-auto">
+            A better way to create and share knowledge
+          </h2>
+          <p class="subheading opacity-70">
+            SyncTech is driven by a set of core missions that define our purpose
+            and guide our actions. These missions are the driving force behind
+            everything we do. Here are the missions that SyncTech is committed
+            to.
+          </p>
+        </header>
+        <div
+          class="grid grid-cols-1 gap-4 sm:max-w-3xl sm:grid-cols-[1fr_1fr] xl:max-w-4xl"
+        >
+          <div class="gesture-wrapper svelte-10rpdgm">
+            <div class="gesture-item h-full svelte-10rpdgm">
+              <img
+                src="icon/data.png"
+                loading="lazy"
+                width="40"
+                height="40"
+                alt="'data' icon"
+                aria-hidden="true"
+                class="icon pointer-events-none absolute top-10 left-10 z-50 m-[1px] box-content rounded-2xl bg-gradient-to-br from-white/50 via-white/5 to-transparent p-2 mix-blend-plus-lighter sm:top-12 sm:left-12 svelte-1pt0422"
+              />
+              <div
+                class="box flex h-full flex-col gap-4 rounded-[1.5rem] p-10 text-left sm:p-12 glass"
+              >
+                <div
+                  aria-hidden="true"
+                  class="mb-2 box-content h-10 w-10 p-2"
+                ></div>
+                <h3 class="headline font-bold">Empowering Data Ownership</h3>
+                <p class="text opacity-80">
+                  At SyncTech, we believe that individuals should have full
+                  control over their own data. We strive to create a platform
+                  where users can confidently manage, protect, and utilize their
+                  data as they see fit.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="gesture-wrapper svelte-10rpdgm">
+            <div class="gesture-item h-full svelte-10rpdgm">
+              <img
+                src="icon/create.png"
+                loading="lazy"
+                width="40"
+                height="40"
+                alt="'create' icon"
+                aria-hidden="true"
+                class="icon pointer-events-none absolute top-10 left-10 z-50 m-[1px] box-content rounded-2xl bg-gradient-to-br from-white/50 via-white/5 to-transparent p-2 mix-blend-plus-lighter sm:top-12 sm:left-12 svelte-1pt0422"
+              />
+              <div
+                class="box flex h-full flex-col gap-4 rounded-[1.5rem] p-10 text-left sm:p-12 glass"
+              >
+                <div
+                  aria-hidden="true"
+                  class="mb-2 box-content h-10 w-10 p-2"
+                ></div>
+                <h3 class="headline font-bold">Fostering Collaboration</h3>
+                <p class="text opacity-80">
+                  Collaboration is at the heart of innovation. SyncTech is
+                  dedicated to fostering collaboration among developers,
+                  creators, and users.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <div class="min-h-smallscreen flex flex-col">
+      <section
+        id="contact"
+        class="flex min-h-screen flex-col justify-center gap-12 px-screen sm:text-center mx-auto max-w-xl grow"
+      >
+        <div class="flex flex-col justify-center gap-4 mix-blend-plus-lighter">
+          <h2 class="title mb-4 font-bold">Get in touch</h2>
+          <p class="subtitle text-white/70">
+            Don&#39;t hesitate to
+            <a href="" class="text-pink-500">write an email</a>
+            or
+            <a href="" class="text-pink-500">DM us on Twitter</a>.
+          </p>
+          <p class="subtitle text-white/70">Subscribe to our newsletter:</p>
+        </div>
+        <form
+          class="isolate mx-auto flex w-full flex-col items-start gap-4 transition-all md:flex-row"
+        >
+          <input
+            type="email"
+            name="email"
+            placeholder="E-mail"
+            class="w-full grow rounded-2xl border-[0.5px] border-white/20 bg-black/30 p-3 backdrop-blur-lg transition-all"
+          />
+          <button
+            type="submit"
+            disabled
+            class="relative w-full min-w-[12rem] rounded-2xl bg-white/10 p-3 backdrop-blur-lg transition-all after:transition-all hover:bg-white/20 disabled:border-[0.5px] disabled:border-white/20 disabled:bg-transparent disabled:p-[-0.5px] disabled:opacity-60 disabled:hover:bg-transparent md:w-auto form-none svelte-u3g3ao"
+          >
+            Subscribe&nbsp;<span class="font-sans font-bold">&rarr;</span>
+          </button>
+        </form>
+      </section>
+      <footer
+        class="grid gap-6 px-screen text-sm lg:grid-cols-3 dark relative pb-12"
+      >
+        <p
+          class="order-2 flex justify-center opacity-50 lg:order-1 lg:justify-start"
+        >
+          © 2022 SyncTech GmbH &amp; Co. KG.
+        </p>
+        <div
+          class="order-1 flex justify-center divide-x divide-black/30 opacity-50 dark:divide-white/30"
+        >
+          <p class="h-min px-4">
+            <button>Top <span class="font-sans">↑</span></button>
+          </p>
+        </div>
+      </footer>
+    </div>
+    <script
+      data-cfasync="false"
+      src="cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"
+    ></script>
+    <script type="module" data-sveltekit-hydrate="11spoh">
+      import { start } from "./_app/immutable/start-b092109f.js";
+
+      start({
+        env: {},
+        hydrate: {
+          status: 200,
+          error: null,
+          node_ids: [0, 2],
+          params: {},
+          routeId: "",
+          data: (function (a) {
+            return [a, a];
+          })(null),
+          form: null,
+        },
+        paths: { base: "", assets: "" },
+        target: document.querySelector('[data-sveltekit-hydrate="11spoh"]')
+          .parentNode,
+        trailing_slash: "never",
+      });
+    </script>
+    <script
+      defer
+      src="https://static.cloudflareinsights.com/beacon.min.js/v8b253dfea2ab4077af8c6f58422dfbfd1689876627854"
+      integrity="sha512-bjgnUKX4azu3dLTVtie9u6TKqgx29RBwfj3QXYt5EKfWM/9hPSAI/4qcV5NACjwAo8UtTeWefx6Zq5PHcMm7Tg=="
+      data-cf-beacon='{"rayId":"7ff683641bcc7c83","version":"2023.8.0","r":1,"b":1,"token":"fa172fde4f7947ed870f79168eda29f5","si":100}'
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
